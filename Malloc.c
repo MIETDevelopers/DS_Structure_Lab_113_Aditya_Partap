@@ -10,7 +10,7 @@
 #include<stdlib.h>   //     Pre-Processive to include standard Libraray funtion header files
 
 
-int Aryan=-1,James,i,n; // Variable Declratation   Initially there is no element in stack
+int Aditya=-1,James,i,n; // Variable Declratation   Initially there is no element in stack
 int *stack;  //Pointer Variable Declratation
 void push(); //Function for push  Stack operation
 void pop(); //Function for pop Stack operation
@@ -48,7 +48,7 @@ default: printf("\nWrong Choice!!");
  /*  Function to add an element to the stack */
 	void push()
 {
-if(Aryan==n)
+if(Aditya==n)
 {
 printf("\nStack is OverFlow!!");
 }
@@ -56,34 +56,34 @@ else
 {
 printf("\nEnter element to push:");
 scanf("%d",&James);
-Aryan=Aryan+1; // "element" is incremented after an element is pushed
-stack[Aryan]=James;// The pushed element is made as element
+Aditya=Aditya+1; // "element" is incremented after an element is pushed
+stack[]=James;// The pushed element is made as element
 }
 }
  /*  Function to delete an element from the stack */
 void pop()
 {
-if(Aryan==-1)
+if(Aditya==-1)
 {
 printf("\nStack is UnderFlow!!");
 }
 else
 {
-printf("\nDeleted element is %d",stack[Aryan]);
-Aryan=Aryan-1;  //  Decrement element after a pop
+printf("\nDeleted element is %d",stack[Aditya]);
+Aditya=Aditya-1;  //  Decrement element after a pop
 }
 }
  /*  Function to display the status of the stack */
 void display()
 {
-if(Aryan==-1)
+if(Aditya==-1)
 {
 printf("\nStack is empty!!");
 }
 else
 {
 printf("\nStack is...\n");  //  Print the stack
-for(i=Aryan;i>=0;--i)
+for(i=Aditya;i>=0;--i)
 printf("%d\n",stack[i]);
 }
 }
